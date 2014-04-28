@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^news/(.*)/$ /news/display/?nid=$1 [QSA]
+
+

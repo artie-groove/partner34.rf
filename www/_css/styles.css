@@ -1,0 +1,204 @@
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 100px;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #e8e2c3;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #43B2DD;
+}
+
+#header {
+    padding: 10px 0 15px 0;
+}
+
+#content {
+    padding-bottom: 55px;
+}
+
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 100px;
+    overflow: hidden;
+    background: #c4e3f3;
+}
+
+#footer .container {
+    border-top: 1px solid #09F;
+    padding-top: 20px;
+    padding-left: 30px;
+    background: transparent;
+}
+
+.container {
+	/* background: #FAFAFF; */
+}
+
+h2 {
+    color: #269abc;
+}
+
+.q {
+    font-size: 16px;
+    font-weight: bold;
+    color: #269abc;
+}
+
+.a {
+    font-size: 16px;
+}
+
+p.well#remark {
+    margin-bottom: 0;
+}
+
+header {
+	background: #43b2dd;
+}
+
+header #logo {
+	font-family: 'Russo One', sans-serif;
+	text-align: center;
+}
+
+header #logo h1 {
+	font-size: 74px;
+}
+
+header #logo h1 a {
+	color: #003;
+}
+
+header #logo h1 a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*
+header #logo h1 a:hover {
+	color: #FF0;
+	text-decoration: none;
+}
+
+header #logo h1:hover {
+	background: #000;
+}
+*/
+
+header #logo p {
+	font-size: 17px;
+	background: #0CF;
+	padding: 4px 0;
+	color: #003;
+}
+
+/*
+header #logo h1:hover + p {
+	background: #FF0;
+}
+*/
+
+header .routeto {
+	border-left: 3px solid #0CF;
+	padding-top: 12px;
+}
+
+header address {
+	font-size: 15px;	
+}
+
+header address h4 span.small {
+	color: #006;
+}
+
+#main {
+    padding: 25px 0;
+}
+
+#main #logoimg {
+    margin: 15px 0 35px 0;
+}
+
+#main #slogan h1 {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding: 10px 15px;
+    color: #fff;
+    border-left: 8px solid #fff;
+
+    /* background: #eee; */
+}
+
+#main h3 {
+    margin-top: 0;
+    background: #eee;
+    padding: 10px 15px;
+    border-top: 5px solid #ccc;
+}
+
+#main a + ul li {
+    font-size: 18px;
+    padding: 7px 0;
+}
+
+#main h4 {
+    margin-top: 0;
+}
+
+#main .panel {
+    margin-top: 30px;
+}
+
+#main ul.nav li {
+    font-size: 24px;
+}
+
+
+#roadhelp,
+#main #bonus {
+    background: #fff;
+    padding: 25px 20px 15px 20px;
+    margin-bottom: 25px;
+}
+
+#roadhelp h4,
+#main #bonus h4 {
+    font-size: 22px;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+#roadhelp #details {
+
+}
+
+#bonus {
+    background: #eee;
+    padding: 25px 0;
+}
+
+.photoframe {
+    border: 3px solid #269abc;
+}
+
+.vtop * { vertical-align: top; }
+.vmid * { vertical-align: middle; }
+.vbot * { vertical-align: bottom; }
