@@ -46,6 +46,6 @@
 		}
 	}
 	
-	if ( isset( $_GET['dev'] ) ) $template .= '_dev';
+	//if ( isset( $_GET['dev'] ) ) $template .= '_dev';
 	
 	include 'templates/' . $template . '.tmpl.php';

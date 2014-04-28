@@ -59,14 +59,22 @@ h2 {
     font-size: 16px;
     font-weight: bold;
     color: #269abc;
+	color: #43b2dd;
+	
+	color: #0cf;
+	color: #06C;
 }
 
 .a {
     font-size: 16px;
 }
 
-p.well#remark {
+p#remark {
     margin-bottom: 0;
+}
+
+#info-block {
+	padding-left: 25px;	
 }
 
 header {
@@ -142,22 +150,43 @@ header address h4 span.small {
     margin-bottom: 50px;
     padding: 10px 15px;
     color: #fff;
-    border-left: 8px solid #fff;
+    border-left: 10px solid #fff;
 
     /* background: #eee; */
 }
 
-#main h3 {
-    margin-top: 0;
-    background: #eee;
-    padding: 10px 15px;
-    border-top: 5px solid #ccc;
+#main #main-menu-block img {
+	border-bottom: 1px solid #000;	
 }
 
-#main a + ul li {
-    font-size: 18px;
-    padding: 7px 0;
+#main #main-menu-block h3 {
+    margin: 0;
+    background: #eee;
+    padding: 10px 15px;
+    border-top: 1px solid #fafafa;
 }
+
+#main #main-menu-block .service-item {
+	border: 12px solid #fff;	
+}
+
+#main #main-menu-block ul {
+	background: #ddd;
+	margin: 0;
+	padding: 10px 10px 10px 35px;
+	color: #aaa;
+}
+
+#main #main-menu-block ul li {
+    font-size: 18px;
+    padding: 7px 0;	
+}
+
+#main #main-menu-block a {
+	color: #006;
+}
+	
+
 
 #main h4 {
     margin-top: 0;
@@ -171,6 +200,9 @@ header address h4 span.small {
     font-size: 24px;
 }
 
+#content {
+	padding-bottom: 25px;	
+}
 
 #roadhelp,
 #main #bonus {
@@ -178,6 +210,7 @@ header address h4 span.small {
     padding: 25px 20px 15px 20px;
     margin-bottom: 25px;
 }
+
 
 #roadhelp h4,
 #main #bonus h4 {
@@ -197,6 +230,8 @@ header address h4 span.small {
 
 .photoframe {
     border: 3px solid #269abc;
+	border: 3px solid #43b2dd;
+	border: 12px solid #fafafa;
 }
 
 .vtop * { vertical-align: top; }
