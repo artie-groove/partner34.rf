@@ -1,4 +1,30 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.18, created on 2014-04-30 03:32:38
+         compiled from "templates\inner.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:101445360346f184490-02383820%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '3fc14b9520fa9a82bfa0d1df0b5ba331b0de7b16' => 
+    array (
+      0 => 'templates\\inner.tpl',
+      1 => 1398814329,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '101445360346f184490-02383820',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.18',
+  'unifunc' => 'content_5360346f21aea7_07740025',
+  'variables' => 
+  array (
+    'title' => 0,
+    'pageName' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5360346f21aea7_07740025')) {function content_5360346f21aea7_07740025($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="ru">
 <head>
     <link href='http://fonts.googleapis.com/css?family=Russo+One&subset=cyrillic' rel='stylesheet' type='text/css'>
@@ -11,7 +37,8 @@
     <script type="text/javascript" src="/_js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="/_js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/_js/lightbox.min.js"></script>
-    <title>{$title}</title>
+    <title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+</title>
 </head>
 
 <body>
@@ -101,7 +128,8 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-7" id="content">
-                {include $pageName}
+                <?php echo $_smarty_tpl->getSubTemplate ($_smarty_tpl->tpl_vars['pageName']->value, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
             </div>
             <div class="col-sm-4 col-sm-offset-1" id="roadhelp">
                 <h4 class="h4">Помощь на дороге</h4>                
@@ -214,4 +242,4 @@
 
 
 </body>
-</html>
+</html><?php }} ?>
