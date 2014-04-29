@@ -1,51 +1,31 @@
 <?
-    /*
-    if ( empty( !$_GET['section'] ) )
-    {
-        if ( $_GET['section'] == "article" )
-        {
-            require_once "application/controllers/ArticleController.php";
-            $cntl = new ArticleController();
-            $view = new ArticleView();
-        }
-    }
-    else
-    {
-        require_once "application/controllers/DefaultController.php";
-        $cntl = new ArticleController();
-        $view = new ArticleView();
-    }
-    $cntl->index();
-    */
 
-    /* if ( empty( $_GET['section'] ) ) include 'content.html'; 
-    include $_SERVER['DOCUMENT_ROOT'] . '/articles/accompaniment.html';
-	*/
-	
-	$sections = array(
-		'assessment' => 'Оценка имущества',
-		'examination' => 'Независимая техническая экспертиза',
-		'legal' => 'Юридические услуги',
-        'road_help' => 'Помощь на дороге',
-        'road_incident' => 'Экспертиза ДТП',
-		'accompainment' => 'Сопровождение и&nbsp;представительство в&nbsp;страховых компаниях'
-	);
-	
-	$content = '';
-	$template = 'main';
-	$title = '';
+    // put full path to Smarty.class.php
+    $tePath = $_SERVER['DOCUMENT_ROOT'] . '/app/lib/smarty';
+    require $tePath . '/Smarty.class.php';
+    $smarty = new Smarty();
+
+    $smarty->setTemplateDir($tePath . '/templates');
+    $smarty->setCompileDir($tePath . '/templates_c');
+    $smarty->setCacheDir($tePath . '/cache');
+    $smarty->setConfigDir($tePath . '/configs');
+
+
+    require 'app/models/ArticleModel.php';
+    require 'app/views/ArticleView.php';
+    require 'app/views/DefaultView.php';
+
+    // router
+    $view = 0;
 	if ( !empty( $_GET['section'] ) ) 
 	{
-		$src = 'articles/' . $_GET['section'] . '.html';
-		if ( file_exists( $src ) )
-		{
-			$content = $src;
-			$template = 'inner';
-
-			$title = $sections[$_GET['section']];
-		}
+        $model = new ArticleModel('articles');
+        $view = new ArticleView($smarty, $model);
+        $view->setArticleId($_GET['section']);
 	}
-	
-	//if ( isset( $_GET['dev'] ) ) $template .= '_dev';
-	
-	include 'templates/' . $template . '.tmpl.php';
+    else
+    {
+        $view = new DefaultView($smarty);
+    }
+
+    $view->render();
