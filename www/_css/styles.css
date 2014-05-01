@@ -160,7 +160,8 @@ header address h4 span.small {
 	border-bottom: 1px solid #000;	
 }
 
-#main #main-menu-block h3 {
+#main #main-menu-block h3,
+#main #main-menu-block h4 {
     margin: 0;
     background: #eee;
     padding: 10px 15px;

@@ -13,6 +13,7 @@ require_once 'app/entities/Article.php';
 class ArticleModel {
 
     private $storagePath;
+    private $selectedArticleId;
 
     private $articles = array(
         'assessment' => 'Оценка имущества',
@@ -30,6 +31,16 @@ class ArticleModel {
     function __construct( $storagePath )
     {
         $this->storagePath = $storagePath;
+    }
+
+    function setArticleId( $articleId )
+    {
+        $this->selectedArticleId = $articleId;
+    }
+
+    function getArticle()
+    {
+        return $this->getById( $this->selectedArticleId );
     }
 
     function getById( $articleId )

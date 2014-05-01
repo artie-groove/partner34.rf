@@ -13,6 +13,7 @@
 
     require 'app/models/ArticleModel.php';
     require 'app/views/ArticleView.php';
+    require 'app/controllers/ArticleController.php';
     require 'app/views/DefaultView.php';
 
     // router
@@ -21,7 +22,8 @@
 	{
         $model = new ArticleModel('articles');
         $view = new ArticleView($smarty, $model);
-        $view->setArticleId($_GET['section']);
+        $cntl = new ArticleController($model);
+        $cntl->index();
 	}
     else
     {
