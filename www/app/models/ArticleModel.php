@@ -16,14 +16,43 @@ class ArticleModel {
     private $selectedArticleId;
 
     private $articles = array(
-        'assessment' => 'Оценка имущества',
-        'examination' => 'Независимая техническая экспертиза',
+        'about' => array(
+            'basics' => 'О компании ЦНЭО &laquo;Партнёр&raquo;',
+            'philosophy' => 'Философия компании',
+            'certificates' => 'Свидетельства и сертификаты',
+            'partners' => 'Партнёры и клиенты',
+            'faces' => 'Компания в лицах',
+            'thanks' => 'Благодарности',
+            'vacancies' => 'Вакансии'
+        ),
+        'assessment' => array(
+            'recovery' => 'Оценка стоимости восстановительного ремонта',
+            'market' => 'Оценка рыночной стоимости транспортных средств',
+            'loss' => 'Оценка утраты товарной стоимости',
+            'notary' => 'Оценка для нотариуса',
+            'prejudice' => 'Оценка всех видов ущерба',
+            'estate' => 'Оценка недвижимости',
+            'land' => 'Оценка стоимости земельных участков',
+            'business' => 'Оценка бизнеса',
+            'rent' => 'Оценка ставки по арендной плате',
+            'equipment' => 'Оценка машин и оборудования',
+            'immaterial' => 'Оценка нематериальных активов',
+            'writeoff' => 'Оценка для целей списания имущества',
+            'customs' => 'Оценка для таможни'
+        ),
+        'examination' => array(
+            'summary' => 'Наши услуги',
+            'technical' => 'Автотехническая экспертиза дорожно-транспортного происшествия',
+            'motion' => 'Транспортно-трасологическая экспертиза',
+            'transport' => 'Автодорожная экспертиза',
+            'goods' => 'Товароведческая экспертиза',
+            'independent' => 'Независимая техническая экспертиза',
+            'quality' => 'Экспертиза качества',
+            'building' => 'Строительная экспертиза'
+        ),
         'legal' => 'Юридические услуги',
         'road_help' => 'Помощь на дороге',
-        'road_incident_1' => 'Автотехническая экспертиза дорожно-транспортного происшествия',
-        'road_incident_2' => 'Транспортно-трасологическая экспертиза',
-        'road_incident_3' => 'Автодорожная экспертиза',
-        'road_incident_4' => 'Товароведческая экспертиза',
+        'prices' => 'Стоимость услуг',
         'map_vlz' => 'Схема расположения волжского офиса',
         'map_vgd' => 'Схема расположения волгоградского офиса'
     );
@@ -45,16 +74,31 @@ class ArticleModel {
 
     function getById( $articleId )
     {
-        if ( array_key_exists($articleId, $this->articles) )
+        $item = $this->searchArticle($articleId, $this->articles);
+        if ( $item )
         {
-            $title = $this->articles[$articleId];
+            $title = $item;
         }
         else
         {
             $title = '__Статья_не_существует__';
-            $articleId = '404';
+            $articleId = array('404');
         }
-        $src = $this->storagePath . '/' . $articleId . '.html';
+        $src = $this->storagePath . '/' . implode('/', $articleId) . '.html';
         return new Article($title, $src);
+    }
+
+    private function searchArticle( $arrAddress, $branch )
+    {
+        if ( !is_array($arrAddress) && empty($arrAddress) ) return false;
+        $elem = array_shift($arrAddress);
+        if ( array_key_exists($elem, $branch) )
+        {
+            if ( is_array($branch[$elem]) )
+                return $this->searchArticle($arrAddress, $branch[$elem]);
+
+            return $branch[$elem];
+        }
+        return false;
     }
 }

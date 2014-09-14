@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4" id="logo">
-                <h1><a href="/">Партнёр</a></h1>
+                <div><a href="/">Партнёр</a></div>
                 <p>служба комплексного содействия</p>
             </div>
             <div class="col-md-7 col-md-offset-1">
@@ -12,13 +12,7 @@
                             <div class="col-xs-7">
                                 <address>
                                     <h4>Волгоград<br /><span class="small">ул.&nbsp;Хиросимы,&nbsp;16&thinsp;б</span></h4>
-                                    <table>
-                                        <col width="30" />
-                                        <tr>
-                                            <td><span class="glyphicon glyphicon-earphone"></span></td>
-                                            <td>+7 987-647-51-34</td>
-                                        </tr>
-                                    </table>
+                                    <span class="glyphicon glyphicon-earphone"></span>&nbsp;<nobr class="phone">+7 987-647-51-34</nobr>
                                 </address>
                             </div>
                             <div class="col-xs-5 routeto">

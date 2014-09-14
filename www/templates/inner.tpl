@@ -5,8 +5,8 @@
 
     <body>
 
-        {include "templates/topmenu.tpl"}
         {include "templates/header.tpl"}
+        {include "templates/topmenu.tpl"}
 
         <div id="main">
             <div class="container">

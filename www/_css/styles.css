@@ -87,15 +87,15 @@ header #logo {
 	text-align: center;
 }
 
-header #logo h1 {
+header #logo div {
 	font-size: 74px;
 }
 
-header #logo h1 a {
+header #logo div a {
 	color: #003;
 }
 
-header #logo h1 a:hover {
+header #logo div a:hover {
     text-decoration: none;
     color: #fff;
 }

@@ -6,6 +6,7 @@
 <body>
 
     {include "templates/header.tpl"}
+    {include "templates/topmenu.tpl"}
 
     <div id="main">
         <div class="container">

@@ -18,7 +18,7 @@
 
     // router
     $view = 0;
-	if ( !empty( $_GET['section'] ) ) 
+	if ( !empty( $_GET['article'] ) )
 	{
         $model = new ArticleModel('articles');
         $view = new ArticleView($smarty, $model);

@@ -19,6 +19,7 @@ class ArticleController {
 
     public function index()
     {
-        $this->model->setArticleId($_GET['section']);
+        $id = explode('/', rtrim($_GET['article'], '/'));
+        $this->model->setArticleId($id);
     }
 }
