@@ -230,6 +230,48 @@ header address h4 span.small {
     padding: 25px 0;
 }
 
+.feed {
+
+}
+
+
+.feed div {
+    margin-top: 25px;
+}
+
+.feed div a {
+}
+
+.feed div a img {
+    border: 5px solid #fff;
+}
+
+.feed div .caption {
+    margin: 0;
+    padding: 0 0 0 30px;
+    background-color: #fefefe;
+    width: 660px;
+    border: 5px solid #fff;
+}
+
+.feed div .inverse {
+    background-color: #555;
+    color: #fff;
+    border: 5px solid #555;
+    border-top: 1px solid #222;
+}
+
+.feed div h6 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.feed div p {
+    font-size: 12px;
+    margin-top: 0;
+}
+
 .photoframe {
     border: 3px solid #269abc;
 	border: 3px solid #43b2dd;

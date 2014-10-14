@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-    {include "templates/head.tpl" title="Центр содействия автомобилистам &laquo;Партнёр&raquo;"}
+    {include "templates/head.tpl" title="Центр независимой экспертизы и оценки"}
 
 <body>
 
@@ -28,18 +28,18 @@
                         <div class="col-sm-12 col-md-8">
                             <div class="service-item">
 								<a href="/road_incident_1/"><img src="/_img/road_incident.jpg" width="100%" alt="Экспертиза ДТП" /></a>
-                               	<a href="/road_incident_1/"><h3 class="h3">Экспертиза ДТП</h3></a>
+                               	<a href="/examination/technical/"><h3 class="h3">Экспертиза ДТП</h3></a>
                                 <ul>
-	                                <li><a href="/road_incident_1/">Автотехническая экспертиза дорожно-транспортного происшествия</a></li>
-	                                <li><a href="/road_incident_2/">Транспортно-трасологическая экспертиза</a></li>
-	                                <li><a href="/road_incident_3/">Автодорожная экспертиза</a></li>
-	                                <li><a href="/road_incident_4/">Товароведческая экспертиза</a></li>
+	                                <li><a href="/examination/technical/">Автотехническая экспертиза дорожно-транспортного происшествия</a></li>
+	                                <li><a href="/examination/motion/">Транспортно-трасологическая экспертиза</a></li>
+	                                <li><a href="/examination/transport/">Автодорожная экспертиза</a></li>
+	                                <li><a href="/examination/goods/">Товароведческая экспертиза</a></li>
 	                            </ul>
                             </div>                            
                         </div>
                         <div class="col-sm-4">
                             <div class="service-item">
-                            	<a href="/examination/">
+                            	<a href="/examination/independent/">
                             	    <img src="/_img/examination.jpg" width="100%" alt="Независимая экспертиза"/>
                             	    <h4 class="h4">Независимая экспертиза</h4>
                             	</a>
@@ -49,7 +49,7 @@
 
                         <div class="col-sm-4">
                             <div class="service-item">
-                            	<a href="/assessment/">
+                            	<a href="/assessment/estate/">
                             	    <img src="/_img/assessment.jpg" width="100%" alt="Оценка имущества"/>
                             	    <h4 class="h4">Оценка имущества</h4>
                             	</a>
@@ -72,13 +72,13 @@
                     <div class="panel-body">
                         <div class="col-sm-6">
                             <ul class="nav nav-pills nav-stacked">
-                                <li><a href="/road_incident_1/">Экспертиза ДТП</a></li>
-                                <li><a href="/examination/">Независимая экспертиза</a></li>
+                                <li><a href="/examination/technical/">Экспертиза ДТП</a></li>
+                                <li><a href="/examination/independent/">Независимая экспертиза</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-6">
                             <ul class="nav nav-pills nav-stacked">
-                                <li><a href="/assessment/">Оценка имущества</a></li>
+                                <li><a href="/assessment/estate/">Оценка имущества</a></li>
                                 <li><a href="/legal/">Юридические услуги</a></li>
                             </ul>
                         </div>

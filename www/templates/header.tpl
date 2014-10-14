@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-4" id="logo">
                 <div><a href="/">Партнёр</a></div>
-                <p>служба комплексного содействия</p>
+                <p>Центр независимой<br />экспертизы и&nbsp;оценки</p>
             </div>
             <div class="col-md-7 col-md-offset-1">
                 <div class="row">
