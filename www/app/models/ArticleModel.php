@@ -61,7 +61,7 @@ class ArticleModel {
         ),
         'map_vlz' => 'Схема расположения волжского офиса',
         'map_vgd' => 'Схема расположения волгоградского офиса',
-        'map_sevastopol' => 'Схема расположения нового офиса в Крыму'
+        'map_simferopol' => 'Схема расположения нового офиса в Крыму'
     );
 
     function __construct( $storagePath )

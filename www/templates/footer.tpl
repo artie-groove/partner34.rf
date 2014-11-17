@@ -16,7 +16,7 @@
             </div>
             <div class="col-sm-4">
                 <address>
-                    г.&nbsp;Севастополь, ул.&nbsp;Дыбенко,&nbsp;6, оф.&nbsp;10<br />
+                    г.&nbsp;Симферополь, ул.&nbsp;Дыбенко,&nbsp;6, оф.&nbsp;10<br />
                     тел.: <nobr class="phone">+7 978-020-31-19</nobr>
                 </address>
             </div>
@@ -34,7 +34,7 @@
                         <td><nobr class="phone">+7 906-403-33-88</nobr></td>
                     </tr>
                     <tr>
-                        <td>Севастополь:</td>
+                        <td>Симферополь:</td>
                         <td><nobr class="phone">+7 978-020-31-19</nobr></td>
                     </tr>
                 </table>

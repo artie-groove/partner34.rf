@@ -39,12 +39,12 @@
                 <div class="row">
                     <div class="col-xs-6">
                         <address>
-                            <h4><a href="/map_sevastopol/">Севастополь<br/><span class="small">ул.&nbsp;Дыбенко,&nbsp;6,&nbsp;оф.&nbsp;10</span></a></h4>
+                            <h4><a href="/map_simferopol/">Симферополь<br/><span class="small">ул.&nbsp;Дыбенко,&nbsp;6,&nbsp;оф.&nbsp;10</span></a></h4>
                             <nobr><span class="glyphicon glyphicon-earphone"></span>&nbsp;<nobr class="phone">+7 978-020-31-19</nobr></nobr>
                         </address>
                     </div>
                     <div class="col-xs-6 routeto">
-                        <a href="/map_sevastopol/"><span class="glyphicon glyphicon-circle-arrow-right"></span><br />схема<br />проезда</a>
+                        <a href="/map_simferopol/"><span class="glyphicon glyphicon-circle-arrow-right"></span><br />схема<br />проезда</a>
                     </div>
                 </div>
             </div>
